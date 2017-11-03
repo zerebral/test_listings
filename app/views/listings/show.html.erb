@@ -1,0 +1,104 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Heading:</strong>
+  <%= @listing.heading %>
+</p>
+
+<p>
+  <strong>Vin:</strong>
+  <%= @listing.vin %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @listing.price %>
+</p>
+
+<p>
+  <strong>Miles:</strong>
+  <%= @listing.miles %>
+</p>
+
+<p>
+  <strong>Decimal:</strong>
+  <%= @listing.decimal %>
+</p>
+
+<p>
+  <strong>Msrp:</strong>
+  <%= @listing.msrp %>
+</p>
+
+<p>
+  <strong>Vdp url:</strong>
+  <%= @listing.vdp_url %>
+</p>
+
+<p>
+  <strong>Stock no:</strong>
+  <%= @listing.stock_no %>
+</p>
+
+<p>
+  <strong>Exterior color:</strong>
+  <%= @listing.exterior_color %>
+</p>
+
+<p>
+  <strong>Interior color:</strong>
+  <%= @listing.interior_color %>
+</p>
+
+<p>
+  <strong>Seller comments:</strong>
+  <%= @listing.seller_comments %>
+</p>
+
+<p>
+  <strong>Details:</strong>
+  <%= @listing.details %>
+</p>
+
+<p>
+  <strong>Seller name:</strong>
+  <%= @listing.seller_name %>
+</p>
+
+<p>
+  <strong>Seller phone:</strong>
+  <%= @listing.seller_phone %>
+</p>
+
+<p>
+  <strong>City state zip:</strong>
+  <%= @listing.city_state_zip %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @listing.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @listing.state %>
+</p>
+
+<p>
+  <strong>Zip:</strong>
+  <%= @listing.zip %>
+</p>
+
+<p>
+  <strong>Photo link:</strong>
+  <%= @listing.photo_link %>
+</p>
+
+<p>
+  <strong>Photo links:</strong>
+  <%= @listing.photo_links %>
+</p>
+
+<%= link_to 'Edit', edit_listing_path(@listing) %> |
+<%= link_to 'Back', listings_path %>

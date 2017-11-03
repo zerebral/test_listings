@@ -1,0 +1,117 @@
+<%= form_with(model: listing, local: true) do |form| %>
+  <% if listing.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(listing.errors.count, "error") %> prohibited this listing from being saved:</h2>
+
+      <ul>
+      <% listing.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :heading %>
+    <%= form.text_area :heading, id: :listing_heading %>
+  </div>
+
+  <div class="field">
+    <%= form.label :vin %>
+    <%= form.text_area :vin, id: :listing_vin %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price %>
+    <%= form.text_field :price, id: :listing_price %>
+  </div>
+
+  <div class="field">
+    <%= form.label :miles %>
+    <%= form.text_field :miles, id: :listing_miles %>
+  </div>
+
+  <div class="field">
+    <%= form.label :decimal %>
+    <%= form.text_field :decimal, id: :listing_decimal %>
+  </div>
+
+  <div class="field">
+    <%= form.label :msrp %>
+    <%= form.text_field :msrp, id: :listing_msrp %>
+  </div>
+
+  <div class="field">
+    <%= form.label :vdp_url %>
+    <%= form.text_area :vdp_url, id: :listing_vdp_url %>
+  </div>
+
+  <div class="field">
+    <%= form.label :stock_no %>
+    <%= form.text_area :stock_no, id: :listing_stock_no %>
+  </div>
+
+  <div class="field">
+    <%= form.label :exterior_color %>
+    <%= form.text_area :exterior_color, id: :listing_exterior_color %>
+  </div>
+
+  <div class="field">
+    <%= form.label :interior_color %>
+    <%= form.text_area :interior_color, id: :listing_interior_color %>
+  </div>
+
+  <div class="field">
+    <%= form.label :seller_comments %>
+    <%= form.text_area :seller_comments, id: :listing_seller_comments %>
+  </div>
+
+  <div class="field">
+    <%= form.label :details %>
+    <%= form.text_area :details, id: :listing_details %>
+  </div>
+
+  <div class="field">
+    <%= form.label :seller_name %>
+    <%= form.text_area :seller_name, id: :listing_seller_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :seller_phone %>
+    <%= form.text_area :seller_phone, id: :listing_seller_phone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :city_state_zip %>
+    <%= form.text_area :city_state_zip, id: :listing_city_state_zip %>
+  </div>
+
+  <div class="field">
+    <%= form.label :city %>
+    <%= form.text_area :city, id: :listing_city %>
+  </div>
+
+  <div class="field">
+    <%= form.label :state %>
+    <%= form.text_area :state, id: :listing_state %>
+  </div>
+
+  <div class="field">
+    <%= form.label :zip %>
+    <%= form.text_area :zip, id: :listing_zip %>
+  </div>
+
+  <div class="field">
+    <%= form.label :photo_link %>
+    <%= form.text_area :photo_link, id: :listing_photo_link %>
+  </div>
+
+  <div class="field">
+    <%= form.label :photo_links %>
+    <%= form.text_area :photo_links, id: :listing_photo_links %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

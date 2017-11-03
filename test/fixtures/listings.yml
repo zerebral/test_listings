@@ -1,0 +1,45 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  heading: MyText
+  vin: MyText
+  price: 9.99
+  miles: MyString
+  decimal: MyString
+  msrp: 9.99
+  vdp_url: MyText
+  stock_no: MyText
+  exterior_color: MyText
+  interior_color: MyText
+  seller_comments: MyText
+  details: MyText
+  seller_name: MyText
+  seller_phone: MyText
+  city_state_zip: MyText
+  city: MyText
+  state: MyText
+  zip: MyText
+  photo_link: MyText
+  photo_links: MyText
+
+two:
+  heading: MyText
+  vin: MyText
+  price: 9.99
+  miles: MyString
+  decimal: MyString
+  msrp: 9.99
+  vdp_url: MyText
+  stock_no: MyText
+  exterior_color: MyText
+  interior_color: MyText
+  seller_comments: MyText
+  details: MyText
+  seller_name: MyText
+  seller_phone: MyText
+  city_state_zip: MyText
+  city: MyText
+  state: MyText
+  zip: MyText
+  photo_link: MyText
+  photo_links: MyText

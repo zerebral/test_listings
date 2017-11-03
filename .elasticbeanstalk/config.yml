@@ -1,0 +1,13 @@
+branch-defaults:
+  master:
+    environment: mc-tests-prod
+    group_suffix: null
+global:
+  application_name: mc_tests
+  branch: null
+  default_ec2_keyname: aws-eb
+  default_platform: Ruby 2.4 (Puma)
+  default_region: us-east-1
+  profile: null
+  repository: null
+  sc: git
