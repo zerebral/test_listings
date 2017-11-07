@@ -32,26 +32,26 @@
   <tbody>
     <% @listings.each do |listing| %>
       <tr>
-        <td><%= listing.heading %></td>
-        <td><%= listing.vin %></td>
-        <td><%= listing.price %></td>
-        <td><%= listing.miles %></td>
-        <td><%= listing.decimal %></td>
-        <td><%= listing.msrp %></td>
-        <td><%= listing.vdp_url %></td>
-        <td><%= listing.stock_no %></td>
-        <td><%= listing.exterior_color %></td>
-        <td><%= listing.interior_color %></td>
-        <td><%= listing.seller_comments %></td>
-        <td><%= listing.details %></td>
-        <td><%= listing.seller_name %></td>
-        <td><%= listing.seller_phone %></td>
+        <td class="heading"><%= listing.heading %></td>
+        <td class="vin"><%= listing.vin %></td>
+        <td class="price"><%= listing.price %></td>
+        <td class="miles"><%= listing.miles %></td>
+        <td class="decimal"><%= listing.decimal %></td>
+        <td class="msrp"><%= listing.msrp %></td>
+        <td class="vdp_url"><%= listing.vdp_url %></td>
+        <td class="stock_no"><%= listing.stock_no %></td>
+        <td class="exterior_color"><%= listing.exterior_color %></td>
+        <td class="interior_color"><%= listing.interior_color %></td>
+        <td class="seller_comments"><%= listing.seller_comments %></td>
+        <td class="details"><%= listing.details %></td>
+        <td class="seller_name"><%= listing.seller_name %></td>
+        <td class="seller_phone"><%= listing.seller_phone %></td>
         <td><%= listing.city_state_zip %></td>
-        <td><%= listing.city %></td>
-        <td><%= listing.state %></td>
-        <td><%= listing.zip %></td>
-        <td><%= listing.photo_link %></td>
-        <td><%= listing.photo_links %></td>
+        <td class="city"><%= listing.city %></td>
+        <td clas="state"><%= listing.state %></td>
+        <td class="zip"><%= listing.zip %></td>
+        <td class="photo_link"><%= listing.photo_link %></td>
+        <td class="photo_links"><%= listing.photo_links %></td>
         <td><%= link_to 'Show', listing %></td>
         <td><%= link_to 'Edit', edit_listing_path(listing) %></td>
         <td><%= link_to 'Destroy', listing, method: :delete, data: { confirm: 'Are you sure?' } %></td>
